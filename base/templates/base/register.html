@@ -1,0 +1,50 @@
+{% extends "base/main.html" %} {% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="header-bar">
+        <h1>Register</h1>
+    </div>
+
+    <div class="card-body">
+        <form method="POST">
+            {% csrf_token %} 
+
+            <label>{{form.username.label}}</label>
+            {{form.username}}
+            
+            <label>{{form.password1.label}}</label>
+            {{form.password1}}
+            <ul>
+                <li>Your password can’t be too similar to your other personal information.</li>
+                <li>Your password must contain at least 8 characters.</li>
+                <li>Your password can’t be a commonly used password.</li>
+                <li>Your password can’t be entirely numeric.</li>
+            </ul>
+            
+            <label>{{form.password2.label}}</label>
+            {{form.password2}}
+
+            <input style="margin-top: 10px" class="button" type="submit" value="Register">
+        </form>
+        <div style="text-align:center;">
+            <p>Already have an account? <a class="button" href="{% url 'login' %}">Login</a></p>
+        </div>
+    </div>
+
+
+    
+</body>
+
+</html>
+{% endblock content %}
