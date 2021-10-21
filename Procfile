@@ -1,0 +1,1 @@
+web: gunicorn own_todo_list.wsgi --log-file -
