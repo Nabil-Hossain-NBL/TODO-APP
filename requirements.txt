@@ -42,10 +42,6 @@ PyScreeze==0.1.27
 pyttsx3==2.90
 PyTweening==1.0.3
 pytz==2021.1
-<<<<<<< HEAD
-=======
-pypiwin32==223
->>>>>>> parent of 01d6387 (commit)
 requests==2.25.1
 six==1.16.0
 soupsieve==2.2.1
