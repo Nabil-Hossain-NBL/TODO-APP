@@ -37,13 +37,11 @@ pylint==2.7.2
 PyMsgBox==1.0.8
 PyPDF2==1.26.0
 pyperclip==1.8.2
-pypiwin32==223
 PyRect==0.1.4
 PyScreeze==0.1.27
 pyttsx3==2.90
 PyTweening==1.0.3
 pytz==2021.1
-pywin32==301
 requests==2.25.1
 six==1.16.0
 soupsieve==2.2.1
